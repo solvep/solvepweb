@@ -14,13 +14,19 @@ pwd
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
 
-git init
+sudo git init
 git add -A
 git commit -m 'deploy'
+git remote add origin git@github.com:solvep/solvep.github.io.git
 
+git checkout -b 'solvep'
+git checkout 'solvep'
+git push --set-upstream origin solvep
+
+git push
 # git remote -v
 # 如果发布到 https://<USERNAME>.github.io
-git push -f git@github.com:solvep/solvep.github.io.git solvep
+# git push -f origin HEAD:solvep    
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
