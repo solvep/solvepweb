@@ -11,7 +11,7 @@ deploy:
   keep-history: true
   target-branch: master
   on:
-    branch: solvep # 项目源码所在的分支
+    branch: master # 项目源码所在的分支
 branches:
   only:
     - solvep
