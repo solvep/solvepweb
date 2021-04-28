@@ -12,7 +12,7 @@ tagline: A simple and beautiful vuepress blog theme.
 #   borderRadius: '1rem',
 # }
 bgImageStyle: {
-  height: '450px'
+  height: '100hv'
 }
 isShowTitleInHome: false
 actionText: Guide
